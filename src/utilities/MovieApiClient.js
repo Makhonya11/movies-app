@@ -2,7 +2,7 @@
 export class MovieApi {
 
     _APIBASE = "https://api.themoviedb.org/3"
-    _AUTH_TOKEN = api-auth.env.REACT_APP_AUTH_TOKEN
+    _AUTH_TOKEN = process.env.REACT_APP_AUTH_TOKEN
 
     getFilmsList = async (filmName, pageNumber=1) => {
           const res = await fetch (`${this._APIBASE}/search/movie?query=${filmName}&page=${pageNumber}`,{
