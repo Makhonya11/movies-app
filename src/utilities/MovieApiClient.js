@@ -2,7 +2,7 @@
 export class MovieApi {
 
     _APIBASE = "https://api.themoviedb.org/3"
-    _AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiOTQ3ZTk4YjNhMTg4N2Q4M2Q3MjYwMWFjNmRkYTdmNCIsIm5iZiI6MTc0MDMxNDI1Ni4zOTIsInN1YiI6IjY3YmIxNjkwNTVkZDgxMmZhZDQ2N2FhYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7C74kBKvjzUMpOgvxI2JFRfKQ2cloypN_gELWHEubSs'
+    _AUTH_TOKEN = api-auth.env.REACT_APP_AUTH_TOKEN
 
     getFilmsList = async (filmName, pageNumber=1) => {
           const res = await fetch (`${this._APIBASE}/search/movie?query=${filmName}&page=${pageNumber}`,{
