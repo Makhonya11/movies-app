@@ -1,0 +1,129 @@
+.ant-card .ant-card-body {
+    padding: 0;
+    padding-right: 10px;
+   
+}
+.ant-card {
+    border: none;
+    border-radius: 0;
+}
+.filmcard{
+    max-width: 450px;
+    margin: 0;  
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.filmcard-wrapper {
+  
+    display: grid;
+    
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    align-items: start;
+   
+}
+
+@media (min-width: 400px ) {
+    .filmcard-wrapper  {
+        padding: 5px 0 0 10px;
+        width: 390px;
+        grid-template-columns: 60px auto 30px;
+        grid-template-areas: 
+        "image filmname rating"
+        "description description description";
+
+    }
+    img {
+        width: 60px;
+    }
+    .ant-rate {
+    align-self: end;
+    }
+
+}
+
+@media (min-width: 1010px) {
+    .filmcard-wrapper   {
+        padding: 0 5px 0 0;
+        width: 450px;
+        grid-template-columns: auto auto 30px;
+        grid-template-areas: 
+        "image filmname rating"
+        "image description description";
+    }
+    img {
+        width: 183px;
+    }
+
+}
+
+
+.image {
+    margin-right: 10px;
+    padding: 0;
+    grid-area: image;
+}
+img {
+    margin: 0;
+}
+.title {
+font-family: Inter UI;
+font-weight: 400;
+font-size: 20px;
+line-height: 22px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.description {
+    padding-bottom:  10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+grid-area: description;
+    margin-right: 10px;
+align-self: stretch;
+}
+.description, .release-date {
+    font-family: Inter UI;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.description p {
+    margin: 0;
+}
+.filmname {
+    grid-area: filmname;
+}
+.filmname h5, .filmname span{
+    margin:  4px;
+}
+.release-date {
+    display: block;
+}
+.ant-rate-star {
+    font-size: 15px;
+}
+.rating-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+}
+.rating {
+    margin-top: 8px;
+    grid-area: rating;
+    display: flex;
+    justify-self: end;
+    align-self: start;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+

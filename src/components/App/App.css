@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+    .header {
+       width: 400px;
+    }
+}
+
+@media (min-width: 1010px) {
+    .body  {
+        width: 1010px;
+    }
+    .header {
+       width: 93%;
+    }
+
+}
+
+
+.body {
+ 
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main {
+    margin: 20px;
+}
+footer {
+    margin: 20px;
+}

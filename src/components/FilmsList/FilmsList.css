@@ -1,0 +1,22 @@
+.filmslist {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+padding: 0;
+}
+
+@media (min-width: 400px) {
+    .filmslist  {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1010px) {
+    .filmslist  {
+        flex-direction: row;
+    }
+
+}
+
